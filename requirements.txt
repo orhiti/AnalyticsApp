@@ -92,17 +92,11 @@ python-json-logger==2.0.7
 pytz==2023.3.post1
 pywinpty==2.0.12
 
-# Remove Pip Cache
-pip uninstall -y pip
-
 pyparsing==3.1.1
 python-dateutil==2.8.2
 python-json-logger==2.0.7
 pytz==2023.3.post1
 pywinpty==2.0.12
-
-# Remove Pip Cache
-pip uninstall -y pip
 
 # Install other dependencies
 meson
