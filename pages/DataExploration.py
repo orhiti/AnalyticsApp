@@ -10,7 +10,7 @@ dash.register_page(__name__, path='/Analyse', order=3)
 
 # Load data from the CSV file
 dataset = "https://github.com/oussama-rhiti/AnalyticsApp/blob/main/data/cleaned-data.csv"
-df = pd.read_csv("dataset")
+df = pd.read_csv(dataset)
 
 # Mapping for Fuel_Type
 fuel_type_mapping = {
