@@ -103,7 +103,7 @@ meson
 importlib-metadata
 subprocess.run
 toml
-numpy --use-deprecated=legacy-resolver
+
 setuptools-metadata
 
 
