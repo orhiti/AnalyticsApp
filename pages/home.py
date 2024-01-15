@@ -10,7 +10,8 @@ from .templates.kpi import generate_kpi
 
 dash.register_page(__name__, path='/',order=1)
 # Charger les données (remplacez cette ligne par le chargement de vos propres données)
-df = pd.read_csv('C:/Users/AMSE/Downloads/amse-myapp-main/src/data/cleaned-data.csv')
+dataset = "https://github.com/oussama-rhiti/AnalyticsApp/blob/main/data/cleaned-data.csv"
+df = pd.read_csv("dataset")
 date_time = datetime.datetime.now()
 df['Age']=date_time.year - df['Year'] #subtruct this year from the year of data to get the age and save it in a new column call it Age
 
