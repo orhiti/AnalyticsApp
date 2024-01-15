@@ -91,6 +91,33 @@ python-dateutil==2.8.2
 python-json-logger==2.0.7
 pytz==2023.3.post1
 pywinpty==2.0.12
+
+# Remove Pip Cache
+pip uninstall -y pip
+
+pyparsing==3.1.1
+python-dateutil==2.8.2
+python-json-logger==2.0.7
+pytz==2023.3.post1
+pywinpty==2.0.12
+
+# Remove Pip Cache
+pip uninstall -y pip
+
+# Install other dependencies
+meson
+pip install --upgrade pip
+importlib-metadata
+pip install --upgrade setuptools
+subprocess.run
+pip install wheel setuptools pip --upgrade
+toml
+numpy --use-deprecated=legacy-resolver
+setuptools-metadata
+
+PyYAML==6.0.1
+pyzmq==25.1.2
+qtconsole==5.5.1
 PyYAML==6.0.1
 pyzmq==25.1.2
 qtconsole==5.5.1
