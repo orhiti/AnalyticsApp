@@ -9,7 +9,8 @@ from phik import phik_matrix
 dash.register_page(__name__, path='/Analyse', order=3)
 
 # Load data from the CSV file
-df = pd.read_csv(r"C:\Users\AMSE\Downloads\amse-myapp-main\src\data\cleaned-data.csv")
+dataset = "https://github.com/oussama-rhiti/AnalyticsApp/blob/main/data/cleaned-data.csv"
+df = pd.read_csv("dataset")
 
 # Mapping for Fuel_Type
 fuel_type_mapping = {
