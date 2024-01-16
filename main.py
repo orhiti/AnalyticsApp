@@ -8,19 +8,21 @@ from numba import jit
 
 from pages.templates.sidebar import generate_sidebar
 
-#initiat Dash app
-
+# Initialize Dash app
 app = Dash(
     __name__,
     use_pages=True,
     external_stylesheets=[dbc.themes.BOOTSTRAP, dbc.icons.FONT_AWESOME]
 )
 server = app.server
+
 @jit(nopython=False)
+def dummy_function():
+    pass
 
 app.layout = html.Div(
     id="wrapper",
-    children=[                              #add new pages in order to rejester we need to call regter method
+    children=[
         generate_sidebar(pages=dash.page_registry.values()),
         html.Div(
             id="content-wrapper",
@@ -32,7 +34,7 @@ app.layout = html.Div(
                         html.Div(
                             className="container-fluid",
                             children=[
-                                dash.page_container #page containrs comes from 3 files 
+                                dash.page_container  # page containers come from 3 files 
                             ]
                         )
                     ]
@@ -41,6 +43,7 @@ app.layout = html.Div(
         )
     ]
 )
+
 
 if __name__ == '__main__':
     app.run(debug=True)
