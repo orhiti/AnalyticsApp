@@ -11,6 +11,9 @@ from .templates.kpi import generate_kpi
 
 dash.register_page(__name__, path='/home2')
 dataset = "https://github.com/oussama-rhiti/AnalyticsApp/blob/main/data/cleaned-data.csv"
+df = pd.read_csv(dataset, delimiter=',', encoding="latin")
+
+
 df = pd.read_csv(dataset)
 brand_model_counts = df.groupby(['Brand', 'Model']).size().reset_index(name='Count')
 city_coordinates = {
