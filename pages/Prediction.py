@@ -22,7 +22,7 @@ model_url = "https://github.com/oussama-rhiti/AnalyticsApp/raw/main/models/car_p
 response = requests.get(model_url)
 
 # Load the pre-trained XGBoost model using joblib
-model = joblib.load('response')
+model = joblib.load(response)
 
 # Sample DataFrame, replace this with your actual data
 df = pd.DataFrame({
