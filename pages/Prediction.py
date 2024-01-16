@@ -20,7 +20,7 @@ with open("car_price_predictor.joblib", "wb") as f:
     f.write(response.content)
 
 # Load the pre-trained XGBoost model
-model = joblib.load("car_price_predictor.joblib")
+model = joblib.load("car_price_predictor")
 
 # Sample DataFrame, replace this with your actual data
 df = pd.DataFrame({
