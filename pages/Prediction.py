@@ -19,10 +19,10 @@ dash.register_page(__name__, path='/car-price-prediction', order=4)  # Set the o
 model_url = "https://raw.githubusercontent.com/oussama-rhiti/AnalyticsApp/bf84c9686e9a65ad7526261d4bce6b85776c81eb/models/car_price_predictor"
 
 # Download the model file
-response = requests.get(model_url)
+#response = requests.get(model_url)
 
 # Load the pre-trained XGBoost model using joblib
-model = joblib.load(BytesIO(response.content))
+model = joblib.load(model_url)
 # Sample DataFrame, replace this with your actual data
 df = pd.DataFrame({
     'Location': [1],
