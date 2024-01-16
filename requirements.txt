@@ -33,7 +33,9 @@ defusedxml==0.7.1
 exceptiongroup==1.2.0
 executing==2.0.1
 fastjsonschema==2.19.1
+
 Flask==1.1.4
+
 fonttools==4.47.0
 fqdn==1.5.1
 idna==3.6
@@ -131,6 +133,8 @@ wcwidth==0.2.12
 webcolors==1.13
 webencodings==0.5.1
 websocket-client==1.7.0
-Werkzeug==3.0.1
+
+werkzeug==2.0.0
+
 widgetsnbextension==4.0.9
 zipp==3.17.0
