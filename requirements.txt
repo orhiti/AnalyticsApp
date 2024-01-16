@@ -18,7 +18,11 @@ colorama==0.4.6
 comm==0.2.0
 contourpy==1.2.0
 cycler==0.12.1
-dash==2.14.2
+
+
+dash==2.6.0
+
+
 dash-bootstrap-components==1.5.0
 dash-core-components==2.0.0
 dash-html-components==2.0.0
@@ -61,7 +65,9 @@ notebook_shim==0.2.3
 numpy==1.26.2
 overrides==7.4.0
 packaging==23.2
-pandas==2.1.4
+pandas
+
+
 pandocfilters==1.5.0
 parso==0.8.3
 patsy==0.5.5
@@ -79,7 +85,7 @@ python-dateutil==2.8.2
 python-json-logger==2.0.7
 pytz==2023.3.post1
 
-gunicorn==20.1.0
+gunicorn
 phik==0.12.4
 xgboost==2.0.3
 shap==0.44.0
