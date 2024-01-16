@@ -16,7 +16,7 @@ from urllib.request import urlretrieve
 dash.register_page(__name__, path='/car-price-prediction', order=4)  # Set the order for the pages
 
 # URL for the model file on GitHub
-model_url = "https://github.com/oussama-rhiti/AnalyticsApp/raw/main/models/car_price_predictor"
+model_url = "https://raw.githubusercontent.com/oussama-rhiti/AnalyticsApp/bf84c9686e9a65ad7526261d4bce6b85776c81eb/models/car_price_predictor"
 
 # Download the model file
 response = requests.get(model_url)
