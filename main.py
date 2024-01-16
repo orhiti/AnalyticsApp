@@ -15,6 +15,8 @@ app = Dash(
     external_stylesheets=[dbc.themes.BOOTSTRAP, dbc.icons.FONT_AWESOME]
 )
 server = app.server
+@jit(nopython=False)
+
 app.layout = html.Div(
     id="wrapper",
     children=[                              #add new pages in order to rejester we need to call regter method
