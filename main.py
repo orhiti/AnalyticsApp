@@ -12,7 +12,7 @@ app = Dash(
     use_pages=True,
     external_stylesheets=[dbc.themes.BOOTSTRAP, dbc.icons.FONT_AWESOME]
 )
-server=app.server
+server = app.server
 app.layout = html.Div(
     id="wrapper",
     children=[                              #add new pages in order to rejester we need to call regter method
