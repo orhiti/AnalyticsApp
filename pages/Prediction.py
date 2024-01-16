@@ -11,11 +11,14 @@ import requests
 
 dash.register_page(__name__, path='/car-price-prediction', order=4)  # Set the order for the pages
 
-# URL of the pre-trained XGBoost model
-# Download the model file with correct extension
-md = "https://github.com/oussama-rhiti/AnalyticsApp/raw/main/models/car_price_predictor"
+# URL for the model file
+model_url = "https://github.com/oussama-rhiti/AnalyticsApp/raw/main/models/car_price_predictor"
+
+# Download the model file
+model_path, _ = urlretrieve(model_url, "car_price_predictor")
+
 # Load the pre-trained XGBoost model
-model = joblib.load(md + ".joblib")
+model = joblib.load(model_path)
 
 # Sample DataFrame, replace this with your actual data
 df = pd.DataFrame({
