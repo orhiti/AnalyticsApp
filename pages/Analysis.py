@@ -10,7 +10,7 @@ import json
 from .templates.kpi import generate_kpi
 
 dash.register_page(__name__, path='/home2')
-dataset = "https://github.com/oussama-rhiti/AnalyticsApp/blob/main/data/cleaned-data.csv"
+dataset = "https://raw.githubusercontent.com/oussama-rhiti/AnalyticsApp/main/data/cleaned-data.csv"
 df = pd.read_csv(dataset, delimiter=',', encoding="latin")
 
 
