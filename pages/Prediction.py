@@ -13,14 +13,14 @@ from urllib.request import urlretrieve
 
 dash.register_page(__name__, path='/car-price-prediction', order=4)  # Set the order for the pages
 
-# URL for the model file
+# URL for the model file on GitHub
 model_url = "https://github.com/oussama-rhiti/AnalyticsApp/raw/main/models/car_price_predictor"
 
 # Download the model file
-model_path, _ = urlretrieve(model_url, "car_price_predictor")
+response = requests.get(model_url)
 
-# Load the pre-trained XGBoost model
-model = joblib.load(model_path)
+# Load the pre-trained XGBoost model from the downloaded content
+model = joblib.load(BytesIO(response.content))
 
 # Sample DataFrame, replace this with your actual data
 df = pd.DataFrame({
