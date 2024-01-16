@@ -45,7 +45,9 @@ ipykernel==6.28.0
 ipython==8.18.1
 ipywidgets==8.1.1
 isoduration==20.11.0
-itsdangerous==2.1.2
+
+itsdangerous==1.1.0
+
 jedi==0.19.1
 
 jinja2==2.11.2
