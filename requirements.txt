@@ -82,7 +82,7 @@ pytz==2023.3.post1
 gunicorn==20.1.0
 phik==0.12.4
 xgboost==2.0.3
-shap==0.41.0
+shap==0.44.0
 numba==0.58.1
 llvmlite==0.41.0
 
