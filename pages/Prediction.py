@@ -8,6 +8,8 @@ import shap
 import plotly.graph_objects as go
 import numpy as np
 import requests
+from urllib.request import urlretrieve
+
 
 dash.register_page(__name__, path='/car-price-prediction', order=4)  # Set the order for the pages
 
