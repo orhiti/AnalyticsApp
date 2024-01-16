@@ -33,7 +33,7 @@ defusedxml==0.7.1
 exceptiongroup==1.2.0
 executing==2.0.1
 fastjsonschema==2.19.1
-Flask==3.0.0
+Flask==1.1.4
 fonttools==4.47.0
 fqdn==1.5.1
 idna==3.6
