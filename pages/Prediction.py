@@ -21,8 +21,12 @@ model_url = "https://github.com/oussama-rhiti/AnalyticsApp/raw/main/models/car_p
 # Download the model file
 response = requests.get(model_url)
 
+# Save the downloaded content to a local file
+with open('car_price_predictor.joblib', 'wb') as model_file:
+    model_file.write(response.content)
+
 # Load the pre-trained XGBoost model using joblib
-model = joblib.load(response)
+model = joblib.load('car_price_predictor.joblib')
 
 # Sample DataFrame, replace this with your actual data
 df = pd.DataFrame({
