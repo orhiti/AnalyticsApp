@@ -8,6 +8,8 @@ import shap
 import plotly.graph_objects as go
 import numpy as np
 import requests
+from io import BytesIO
+
 from urllib.request import urlretrieve
 
 
