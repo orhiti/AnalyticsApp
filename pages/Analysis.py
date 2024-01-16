@@ -9,7 +9,7 @@ import json
 # Charger les données (remplacez cette ligne par le chargement de vos propres données)
 from .templates.kpi import generate_kpi
 
-dash.register_page(__name__, path='/home2')
+dash.register_page(__name__, path='/home2', order=2)
 dataset = "https://raw.githubusercontent.com/oussama-rhiti/AnalyticsApp/main/data/cleaned-data.csv"
 df = pd.read_csv(dataset, delimiter=',', encoding="latin")
 
