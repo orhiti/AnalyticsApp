@@ -14,7 +14,6 @@ dataset = "https://raw.githubusercontent.com/oussama-rhiti/AnalyticsApp/main/dat
 df = pd.read_csv(dataset, delimiter=',', encoding="latin")
 
 
-df = pd.read_csv(dataset)
 brand_model_counts = df.groupby(['Brand', 'Model']).size().reset_index(name='Count')
 city_coordinates = {
     'Mumbai': (19.0760, 72.8777),
