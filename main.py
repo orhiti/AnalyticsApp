@@ -4,6 +4,7 @@ print(sys.executable)
 import dash
 from dash import Dash, html
 import dash_bootstrap_components as dbc
+from numba import jit
 
 from pages.templates.sidebar import generate_sidebar
 
