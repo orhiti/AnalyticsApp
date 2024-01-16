@@ -11,7 +11,7 @@ import numpy as np
 dash.register_page(__name__, path='/car-price-prediction', order=4)  # Set the order for the pages
 
 # Load the pre-trained XGBoost model
-md = "https://raw.githubusercontent.com/oussama-rhiti/AnalyticsApp/main/pages/xgb_model.json"
+md = "https://github.com/oussama-rhiti/AnalyticsApp/raw/main/models/car_price_predictor"
 model = joblib.load(md)
 
 # Sample DataFrame, replace this with your actual data
