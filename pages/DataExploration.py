@@ -9,8 +9,8 @@ from phik import phik_matrix
 dash.register_page(__name__, path='/Analyse', order=3)
 
 # Load data from the CSV file
-dataset = "https://github.com/oussama-rhiti/AnalyticsApp/blob/main/data/cleaned-data.csv"
-df = pd.read_csv(dataset)
+dataset = "https://raw.githubusercontent.com/oussama-rhiti/AnalyticsApp/main/data/cleaned-data.csv"
+df = pd.read_csv(dataset, delimiter=',', encoding="latin")
 
 # Mapping for Fuel_Type
 fuel_type_mapping = {
