@@ -86,8 +86,6 @@ shap==0.41.0
 numba==0.58.1
 llvmlite==0.41.0
 
-requests==2.26.0
-
 PyYAML==6.0.1
 pyzmq==25.1.2
 qtconsole==5.5.1
